@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "block1 block1 block1 block1"
+        "block2 block3 block3 block4"
+        "block2 block5 block5 block4"
+        "block2 block5 block5 block6"
+        "block7 block7 block7 block7";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto auto;
+    gap: 0;
+    height: 100vh;
+    padding: 0;
+}
+
+.block1, .block2, .block3, .block4, .block5, .block6, .block7 {
+    border: 2px solid black;
+    overflow: auto;
+}
+
+.block1 {
+    grid-area: block1;
+    background-color: #4682B4;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    font-size: calc(1.5vw + 1.5vh);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.block2 {
+    grid-area: block2;
+    background-color: #FFDAB9;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.block3 {
+    grid-area: block3;
+    background-color: #E6E6D4;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.block4 {
+    grid-area: block4;
+    background-color: #FFDAB9;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.block5 {
+    grid-area: block5;
+    background-image: url('https://github.com/VadimGrabenko/Web_1/blob/main/images/pexels-lina-1741205.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    word-wrap: break-word;
+    color: white;
+}
+
+.block5 p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.block5 ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.block5 ul li {
+    margin: 5px 0;
+}
+
+.block5 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.block5 ul li a:hover {
+    color: #4682B4;
+}
+
+
+.block6 {
+    grid-area: block6;
+    background-color: #E6E6D4;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.block7 {
+    grid-area: block7;
+    background-color: #4682B4;
+    text-align: right;
+    padding: 20px;
+    color: white;
+    font-size: calc(1.5vw + 1.5vh);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
