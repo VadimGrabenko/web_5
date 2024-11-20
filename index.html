@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout Task</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="block block1">
+        <h1>DEFAULT VERSION OF MAIN PAGE</h1>
+        <h2>Блок 1</h2>
+        <select id="block1Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock1List">Зберегти список</button></div>
+    <div id="block1Content"></div>
+    <div class="block block2">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ."</p>
+        <h2>Блок 2</h2>
+        <select id="block2Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock2List">Зберегти список</button></div>
+    <div id="block2Content"></div>
+    <div class="block block3"><p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+        <h2>Блок 3</h2>
+        <select id="block3Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock3List">Зберегти список</button>
+        <div id="block3Content"></div>
+    </div>
+    <div class="block block4"><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."</p>
+        <h2>Блок 4</h2>
+        <select id="block4Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock4List">Зберегти список</button>
+        <div id="block4Content"></div>
+    </div>
+
+    <div class="block block5">
+        <p>Pages:</p>
+        <ul>
+            <li><a href="MobileVersion.html">Version of main page for Mobile phones</a></li>
+            <li><a href="EmailVersion.html">Email Version of main page</a></li>
+        </ul>
+        <button id="resetAlignment">Скинути вирівнювання</button>
+        <hr>
+        <div class="number-form">
+            <form id="numberForm">
+                <label for="numberInput">Введіть натуральне число:</label>
+                <input type="number" id="numberInput" name="number" min="1" required>
+                <button type="submit">Знайти максимальну цифру</button>
+            </form>
+        </div>
+        <hr>
+        <form id="alignmentForm">
+            <p>Оберіть блоки для вирівнювання по правому краю:</p>
+            <label>
+                <input type="radio" name="block" value="block2"> Блок 2
+            </label>
+            <label>
+                <input type="radio" name="block" value="block4"> Блок 4
+            </label>
+            <label>
+                <input type="radio" name="block" value="block5"> Блок 5
+            </label>
+        </form>
+        <h2>Блок 5</h2>
+        <select id="block5Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock5List">Зберегти список</button>
+        <div id="block5Content"></div>
+    </div>
+
+    <div class="block block6"><p>earum rerum hic tenetur a sapiente delectus</p>
+        <h2>Блок 6</h2>
+        <select id="block6Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock6List">Зберегти список</button>
+    </div>
+    <div id="block6Content"></div>
+    <div class="block block7"><h2>IT'S ENDING OF THIS LAB</h2>
+        <h2>Блок 7</h2>
+        <select id="block7Select">
+            <option value="" disabled selected>Оберіть дію</option>
+            <option value="addItem">Додати пункт</option>
+        </select>
+        <button id="saveBlock7List">Зберегти список</button>
+    </div>
+    <div id="block7Content"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
